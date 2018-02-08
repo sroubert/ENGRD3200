@@ -1,7 +1,9 @@
 function [error, approx] = taylorSeriesLn2fromLn1(order)
 %this function computes a taylor series approximation of ln(2) from base
-%ln(2). The input, order, is user defined as how many terms you want in
-%your series
+%ln(1). The input, order, is user defined as how many terms you want in
+%your series. The outputs are the error (the percent error) and approx (the
+%approximation of the taylor series).
+
 taylorSeries = [];
 taylorSeries(1) = [log(1)];
 

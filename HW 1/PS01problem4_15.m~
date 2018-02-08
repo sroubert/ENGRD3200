@@ -58,24 +58,12 @@ xlabel('Step')
 %Notice that as you add terms, the error reduction goes down. Therefore,
 %adding more and more terms becomes arbitrary at some point.
 
-%% Percent Error Analysis1.3
+%% Percent Error Analysis
 
 percentError = 10;
 order = 0;
 
 while (percentError > 1)
-    [percentError,~]=taylorSeriesLn2fromLn1(order);
+    [percentError,~]=taylorSeriesLn2fromLn1;
     order = order+1;
 end
-
-order-1
-
-%the order above is the necessary order to reduce percent error to 1
-
-while (percentError > 0.1)
-    [percentError,~]=taylorSeriesLn2fromLn1(order);
-    order = order+1;
-end
-
-order-1
-%the order above is the necessary order to reduce percent error to 0.1
