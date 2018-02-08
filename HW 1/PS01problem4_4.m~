@@ -18,5 +18,4 @@ end
 
 epsCalc - eps(0)
 
-%Notice how the difference between our calculated machine epsilon and
-%eps(0) is 0.
+%Notice how the difference between our calculated machine epsilon

@@ -1,3 +1,5 @@
+%% 3B
+
 %Problem 4.15 from textbook- Problem 3 from HW 1- Using a Taylor Series
 %approximation to predict f(2) for f(x)=ln(x) using base point at x=1
 
@@ -68,7 +70,7 @@ while (percentError > 1)
     order = order+1;
 end
 
-order-1
+order
 
 %the order above is the necessary order to reduce percent error to 1
 
@@ -77,5 +79,5 @@ while (percentError > 0.1)
     order = order+1;
 end
 
-order-1
+order
 %the order above is the necessary order to reduce percent error to 0.1

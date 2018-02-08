@@ -8,16 +8,12 @@ taylorSeries = [];
 taylorSeries(1) = [log(1)];
 
 if order>0
-    for i=1:order
-        
-        taylorSeries(i+1) = ((-1)^(i+1))*(1/ i );
-        
+    for i=1:order   
+        taylorSeries(i+1) = ((-1)^(i+1))*(1/ i );    
     end
 end
 
-
 approx = sum(taylorSeries);
-
 error = 100*abs(log(2) - approx)/log(2);
 
 end
